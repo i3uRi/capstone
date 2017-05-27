@@ -1,0 +1,51 @@
+/* These are base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+header {
+  background-color: white;
+  width: 100%;
+  height: 64px;
+  position: fixed;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 64px;
+
+}
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+.hero {
+  background-color: darkgrey;
+}
+.services {
+  background-color: white;
+}
+.learning {
+  background-color: darkgrey;
+}
+.exhibit {
+  background-color: white;
+}
+footer {
+  background-color: darkgrey;
+  height: 64px;
+}
+.company p {
+  display: none;
+}
+
+/* Breakout of mobile first media queries */
+@media screen and (min-width: 400px)  {}
+@media screen and (min-width: 600px)  {}
+@media screen and (min-width: 1000px) {}
+@media screen and (min-width: 1400px) {}
