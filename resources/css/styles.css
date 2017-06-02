@@ -7,6 +7,9 @@
 html {
   font-size: 16px;
 }
+.content {
+  padding-top: 4rem;
+}
 /* This is the header with logo, Company and Nav Menu */
 header {
   background-color: white;
@@ -95,7 +98,7 @@ h2 {
   padding-bottom: 1rem;
 }
 .learning.title {
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 .section.learning .title h4 {
   padding: 0.5rem 0rem;
@@ -104,18 +107,34 @@ h2 {
   text-align: left;
   background-color: lightgrey;
   padding: 1rem;
-  margin-bottom: 0.5rem;
-
 }
 .section.learning .courses img, h4, p {
   display: none;
-
+}
+/* This is the exhibit section */
+.section.exhibit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  height: auto;
+  padding: 1.5rem 0rem;
+}
+.section.exhibit .title h1 {
+  text-align: center;
+  padding: 2rem 0rem;
+}
+.main.exhibit video {
+  width: 100%;
+  padding-bottom: 1.5rem;
 }
 
 
 footer {
-  background-color: darkgrey;
+  background-color: white;
   height: 4rem;
+  padding: 1rem;
+  font-size: 0.75rem;
 }
 
 
@@ -136,5 +155,6 @@ footer {
     justify-content: space-around;
     height: auto;
   }
-
+  .section.learning .courses img, h4, p {
+    display: flex;
 }
