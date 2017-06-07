@@ -12,6 +12,8 @@ header {
   width: 100%;
   height: 4rem;
   position: fixed;
+  -moz-box-shadow: 0 0 10px 0 #999;
+  -webkit-box-shadow: 0 0 10px 0 #999;
 }
 .menuitems {
   display: flex;
@@ -29,17 +31,23 @@ header {
   background-color: lightgrey;
   height: auto;
 }
+.section.hero h1, h3 {
+  color: #4e4e4e;
+}
 .section.hero .title {
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
 }
-.banner {
-
+button {
+  border-radius: 0.25rem;
+}
+.title button {
+  background-color: #9b9b9b;
 }
 .banner img {
   width: 100%;
-  overflow: hidden;
+  height: auto;
 }
 .title button {
   margin:auto;
@@ -54,6 +62,7 @@ h1 {
   font-size: 2.50rem;
   padding-bottom: 2rem;
   font-weight: bold;
+  color: #4a4a4a;
 }
 h3 {
   font-size: 1.5rem;
@@ -73,9 +82,22 @@ h3 {
 .service.title {
   padding: 1rem;
 }
+.service.title span {
+  color: deepskyblue;
+}
+.service.title p {
+  color: #414141;
+}
+.service.title h2 {
+  color: #414141;
+}
+.service.title h1 {
+  color: #414141;
+}
 h2 {
   font-size: 1.75rem;
   padding-bottom: 0.50rem;
+  color: #4e4e4e;
 }
 .service.title p {
   padding-bottom: 0.50rem;
@@ -105,8 +127,7 @@ h2 {
   background-color: lightgrey;
   padding: 1rem;
 }
-.section.learning .courses img, h4, p {
-  display: none;
+
 }
 /* This is the exhibit section */
 .section.exhibit {
