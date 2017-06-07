@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel='stylesheet' href='resources/css/reset.css'/>
     <link rel='stylesheet' href='resources/css/styles.css'/>
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
     <title>Capstone</title>
   </head>
   <body>
@@ -12,23 +12,23 @@
     <header>
       <nav class="topnav">
         <ul class="menuitems">
-          <li>
+          <li class="logo">
             <img src="resources/images/ic-logo.svg">
             <span class="colmar show-on-desktop">COLMAR</span><span class="academy show-on-desktop">ACADEMY</span>
           </li>
-          <li>
-            <img src="resources/images/ic-on-campus.svg">
+          <li class="menu">
+            <img src="resources/images/ic-on-campus.svg" class="show-on-mobile">
             <span class="show-on-desktop">On campus</span>
           </li>
-          <li>
-            <img src="resources/images/ic-online.svg">
+          <li class="menu">
+            <img src="resources/images/ic-online.svg" class="show-on-mobile">
             <span class="show-on-desktop">Online</span>
           </li>
-          <li class="show-on-desktop">
+          <li class="menu show-on-desktop" >
             <span class="show-on-desktop">For companies</span>
           </li>
-          <li>
-            <img src="resources/images/ic-login.svg">
+          <li class="menu">
+            <img src="resources/images/ic-login.svg" class="show-on-mobile">
             <span class="show-on-desktop">Sign in</span>
           </li>
         </ul>
@@ -38,7 +38,8 @@
       <!-- This is the hero section  -->
       <section class="section hero">
         <div class="banner">
-          <img src="resources/images/banner-mobile.jpg">
+          <img src="resources/images/banner-mobile.jpg" class="show-on-mobile">
+          <img src="resources/images/banner.jpg" class="show-on-desktop">
         </div>
         <div class="title">
           <h1>Learn something new everyday</h1>
