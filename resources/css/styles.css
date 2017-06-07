@@ -3,11 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-html {
-  font-size: 16px;
-}
-.content {
+  font-family: 'Hammersmith One', sans-serif;
   padding-top: 4rem;
 }
 /* This is the header with logo, Company and Nav Menu */
@@ -55,8 +51,9 @@ header {
   width: 100%;
 }
 h1 {
-  font-size: 2.75rem;
+  font-size: 2.50rem;
   padding-bottom: 2rem;
+  font-weight: bold;
 }
 h3 {
   font-size: 1.5rem;
