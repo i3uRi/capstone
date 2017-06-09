@@ -135,7 +135,7 @@ h2 {
 }
 .section.learning .title h2 {
   text-align: left;
-  background-color: lightgrey;
+  background-color: #E7E8E9;
   padding: 1rem;
 }
 
@@ -158,7 +158,6 @@ h2 {
   padding-bottom: 1.5rem;
 }
 
-
 footer {
   background-color: white;
   height: 4rem;
@@ -167,12 +166,55 @@ footer {
   color: #4e4e4e;
 }
 
-
-
-
 /* Breakout of mobile first media queries */
 @media screen and (min-width: 400px)  {}
-@media screen and (min-width: 600px)  {}
+@media screen and (min-width: 600px)  {
+    /* These are base styles for tablet*/
+  .show-on-desktop {
+    display: none;
+  }
+  .show-on-mobile {
+    display: block;
+  }
+  .service.title {
+    padding: 1rem 1rem;
+    width: 100%;
+  }
+  .secondary.service {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  .secondary.service .first, .secondary.service .second, .secondary.service .third {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  .section.learning .title h2 {
+      background-color: white;
+  }
+  .section.learning {
+    background-color: #E7E8E9;
+  }
+  .section.learning .courses img {
+    display: flex;
+  }
+  .courses.placeholder {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .courses.placeholder .courses {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem 1rem;
+  }
+  .learning.title {
+    padding: 0rem;
+  }
+}
 @media screen and (min-width: 1000px) {
   /* These are base styles for desktop*/
   .show-on-desktop {
@@ -183,7 +225,7 @@ footer {
   }
   /* These are header and navigation styles for desktop*/
   .content, .topnav, .footer.placeholder {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
   }
   .logo {
@@ -228,7 +270,7 @@ h3 {
   }
   .section.hero .title {
     display: flex;
-    padding: 8rem 3.5rem 8rem 1rem;
+    padding: 8rem 2.5rem 8rem 1rem;
     width: 26rem;
 }
   /* This is the services section for Desktop*/
@@ -348,15 +390,7 @@ h3 {
 
 @media screen and (min-width: 1400px) {
 
-  .show-on-desktop {
-    display: block;
+  .content, .topnav, .footer.placeholder {
+    width: 1200px;
+    margin: 0 auto;
   }
-
-  .section.hero {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-  }
-  .section.learning .courses img, h4, p {
-    display: flex;
-}
