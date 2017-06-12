@@ -51,16 +51,17 @@ header {
 }
 .title button {
   margin:auto;
-  background-color: #00BFFF;
+  background-color: #1ec4fc;
   color: white;
   font-size: 1.25rem;
   border: none;
   padding: 0.5rem;
   width: 100%;
   border-radius: 0.25rem;
+  transition: background-color 150ms ease-out;
 }
 .title button:hover {
-  background-color: #1ec4fc;
+  background-color: #3acdff;
 }
 h1 {
   font-size: 2.50rem;
@@ -88,8 +89,16 @@ h3 {
   padding: 2rem 0rem;
   width: 100%;
 }
-.service.title span {
+.service.title span a {
   color: deepskyblue;
+  transition: color 150ms ease-out;
+  text-decoration:none;
+}
+.service.title span a:hover {
+color: #3acdff;
+}
+.service.title .signature {
+  color: #414141;
 }
 .service.title p {
   color: #414141;
@@ -111,7 +120,7 @@ h2 {
   font-weight: bold;
 }
 .section.exhibit .title p {
-  line-height: 1.2;
+  line-height: 1.4;
   color: grey;
 }
 /* This is the learning section  for mobile first*/
@@ -129,9 +138,6 @@ h2 {
 }
 .learning.title {
   padding: 0.25rem;
-}
-.section.learning .title h4 {
-  padding: 0.5rem 0rem;
 }
 .section.learning .title h2 {
   text-align: left;
@@ -228,6 +234,15 @@ footer {
     width: 100%;
     margin: 0 auto;
   }
+
+  .menu span a{
+    color: #4e4e4e;
+    transition: color 100ms ease-out;
+    text-decoration:none;
+  }
+  .menu span a:hover {
+    color: #3acdff;
+  }
   .logo {
     width: 60%;
     display: flex;
@@ -246,7 +261,7 @@ footer {
     font-size: 1.25rem;
   }
   .academy {
-    color: #999999;
+    color: #1EC4FC;
 }
 .title button {
     margin: 0;
@@ -326,7 +341,9 @@ h3 {
   padding: 1rem;
 }
 .section.learning .title h4 {
-  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 0rem;
+  border-bottom: 1px solid lightgrey;
   color: grey;
 }
 .section.learning .title p {
@@ -383,10 +400,15 @@ h3 {
   .footer-nav ul {
     display: flex;
   }
-  .footer-nav ul li {
+  .footer-nav ul li a {
     padding: 0rem 1rem;
+    color: #4e4e4e;
+    transition: color 150ms ease-out;
+    text-decoration: none;
   }
-
+  .footer-nav ul li a:hover {
+    color: #1ec4fc;
+  }
 
 @media screen and (min-width: 1400px) {
 
